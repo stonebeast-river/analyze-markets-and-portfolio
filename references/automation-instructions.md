@@ -1,0 +1,28 @@
+# Recurring-task enhancement
+
+When updating an existing market or fund automation:
+
+1. Retrieve the exact existing task and its identifier.
+2. Preserve its schedule, enabled state, title unless a change is necessary, configured holdings, delivery behavior, and all unrelated instructions.
+3. Merge the enhancement below into the existing prompt. Do not replace unknown existing requirements and do not create a second task.
+4. Verify the updated task after the write.
+
+## Enhancement block
+
+Generate a three-layer evidence-first daily report: a one-minute view, complete independent market research, and a separate personalized impact appendix.
+
+Begin with a one-minute view containing exactly the three most important developments, their changed expectations and cross-asset implications, and whether the previous core thesis strengthened, weakened, remained unchanged, or failed. When the previous report is accessible, explicitly compare its thesis, scenarios, watch items, and invalidation conditions with new evidence. Carry unresolved items forward. If no reliable previous report is accessible, say that today's report establishes the baseline.
+
+Always include a visibly separate previous-view verification section. On the first accessible run, put the baseline statement there rather than only mentioning it in the executive view.
+
+Then complete a full market analysis that is independent of the user's current holdings. Do not use the portfolio as a filter for what markets, assets, policies, risks, or opportunities deserve coverage. Analyze material developments across mainland China, Hong Kong, the United States, global macro and policy, rates and credit, currencies, gold and other important commodities, earnings, valuation, liquidity, flows, and sentiment. Prioritize the central market narrative and causal relationships rather than listing news. For each major conclusion, distinguish confirmed facts from interpretation, explain the transmission channel and time horizon, test a competing explanation, and identify evidence that would invalidate the view. State the current market regime, plausible forward scenarios, risks, and upcoming watch items. Include important areas even when the user does not hold them.
+
+Scan the full relevant industry and theme universe each day for breadth, relative leadership, earnings revisions, valuation shifts, policy and supply-chain catalysts, and reliable flow or positioning changes. For mainland China, Hong Kong, and the United States, include one compact row naming strengthening and weakening industries or themes, one-day/one-week/one-to-three-month evidence, breadth or concentration, confirming or conflicting evidence, rotation state, and confidence. A broad regional index or macro label is not a sector result. If evidence is missing, identify the missing window or evidence type instead of omitting the market. Do not reproduce a raw sector leaderboard. Deep-dive only sectors with a material change or those becoming a market-leading theme. Distinguish durable rotation from a one-day rebound, short covering, or low-liquidity noise.
+
+Include a separate opportunity matrix covering opportunities whether held or not. For every candidate, state one opportunity type (`fundamental improvement`, `policy or liquidity transmission`, `valuation mean reversion with catalyst`, or `defensive or diversification value`), why now, supporting evidence, confidence (`high`, `medium`, or `low`), catalyst, horizon, main risk, confirmation and invalidation conditions, a credible alternative or reason waiting is preferable, a brief investable path at the asset, index, or product-category level, and exactly one follow-up status: `worth dedicated research`, `watch`, or `not yet`. Do not expand the daily report into a full index, ETF, or mutual-fund comparison. Treat opportunities as research candidates rather than automatic buy recommendations; the user decides whether to request deeper product research and whether to execute.
+
+Only after the independent market report is complete, add a clearly labeled section titled `对我当前持仓的影响`. Preserve and use the holdings already configured in this task or an authoritative portfolio ledger; do not invent missing positions. Map the market conclusions to each holding through its underlying index or asset, geography, sector, currency, rate sensitivity, and product structure. Separate direct and indirect effects and short-, medium-, and long-term implications. Then assess portfolio-level concentration, overlap, currency exposure, correlation, diversification, recurring-investment risk, and whether the original investment thesis changed. End with one disciplined status: `原计划不变`, `重点观察`, or `达到复核阈值`, with evidence. Do not turn a one-day move or a single headline into a buy or sell instruction.
+
+State the analysis cutoff and timezone. Prefer official releases and filings, exchanges and index providers, established market-data vendors, and then reputable financial reporting; use aggregators only as disclosed fallbacks. For historical-cutoff runs, exclude later retrospectives, revised information unavailable then, and all post-cutoff outcomes. Cite material facts with direct, accessible links, disclose uncertainty and stale or missing data, and never fabricate prices, returns, sector breadth, flows, holdings, forecasts, or sources.
+
+Control report length by avoiding repetition: the dashboard states changes, the narrative interprets them, and the causal table tests only the most important theses. On quiet days, state when the regime or sector picture did not materially change and keep deep dives and the opportunity matrix short. Expand only sections affected by material events.
