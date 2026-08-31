@@ -22,13 +22,27 @@ This repository contains no personal holdings. When personalized analysis is req
 
 At minimum, provide each product's name or identifier and exact share class. Portfolio weight or amount, currency, and recurring-investment plan are optional but useful. The skill does not treat conversational memory, inferred history, or example holdings as authoritative.
 
-## Installation
+## Quick installation
 
-Install or copy this repository as a skill named `analyze-markets-and-portfolio` using the skill mechanism supported by your agent environment. For a local Codex skills directory, one option is:
+Interactive installation for supported agents:
 
 ```bash
-git clone https://github.com/stonebeast-river/analyze-markets-and-portfolio.git ~/.codex/skills/analyze-markets-and-portfolio
+npx skills add stonebeast-river/analyze-markets-and-portfolio-skill
 ```
+
+Global, non-interactive installation for Codex:
+
+```bash
+npx skills add stonebeast-river/analyze-markets-and-portfolio-skill --agent codex --global --copy --yes
+```
+
+Manual Codex installation:
+
+```bash
+git clone https://github.com/stonebeast-river/analyze-markets-and-portfolio-skill.git ~/.codex/skills/analyze-markets-and-portfolio
+```
+
+The `npx` commands require Node.js and npm. The installed skill name remains `analyze-markets-and-portfolio`; the `-skill` suffix belongs only to the GitHub repository name.
 
 The skill has no Python or third-party package dependencies. It does require a host environment capable of retrieving current or historical market sources when the requested analysis needs them.
 
