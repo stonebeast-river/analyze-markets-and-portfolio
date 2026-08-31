@@ -1,0 +1,8 @@
+interface:
+  display_name: "Market & Portfolio Analysis"
+  short_description: "Independent market research, then portfolio impact"
+  default_prompt: "Use $analyze-markets-and-portfolio to produce an evidence-first market report, then separately assess the impact on my holdings."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  allow_implicit_invocation: true
